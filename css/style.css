@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* Utilities
+---------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+img,.text-container, .img-container {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 50px 0;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto 130px;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.desc {
+    color: #727272;
+}
+.button {
+    background-color: #ff900e;
+    padding: 20px 25px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+/* Navigation Bar Style 
+--------------------- */
+
+nav >.container {
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav ul {
+    gap: 50px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+}
+
+/* Showcase Styles
+--------------- */
+.showcase.container {
+    margin: 0 auto;
+}
+.showcase .text-container {
+    margin: 100px auto 50px;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 868px;
+}
+.showcase .title {
+    max-width: 700px;
+    text-align: center;
+    font-size: 65px;
+}
+.showcase .desc {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.showcase img {
+    max-height: 700px;
+    object-fit: cover;
+}
+
+/* Quick Features List Style 
+-------------------- */
+.quick-list {
+    margin: 85px auto 130px;
+    gap: 73px;
+}
+
+.quick-list .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-list .text-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+
+}
+
+.quick-list img {
+    object-fit: cover;
+    height: 342px;
+    width: 342px;
+    border-radius: 8px;
+}
+
+.quick-list .title {
+    max-width: 468px;
+}
+.title .part-1 {
+    font-weight: 500;
+    color: #727272;
+}
+.title .part-3 {
+    color: #ff900e;
+}
+
+.quick-list .desc {
+    max-width: 537px;
+    margin-bottom: 10px;
+    
+}
+
+
+/* Enjoy List Style 
+----------------- */
+.enjoy-list .info {
+    grid-template-columns: repeat(2, 1fr);
+}
+.enjoy-list .title {
+    padding-left: 21px;
+    border-left: 5px solid #ff900e;
+}
+
+.text-container .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+}
+.text-container .sub-container {
+    padding: 30px;
+}
+
+.enjoy-list img {
+    height: 100vh;
+    object-fit: cover;
+
+}
