@@ -43,9 +43,13 @@ header {
     font-size: 45px;
     font-weight: 700;
 }
+.sub-title {
+    font-size: 20px;
 
+}
 .desc {
     color: #727272;
+    line-height: 26px;
 }
 .button {
     background-color: #ff900e;
@@ -147,9 +151,11 @@ nav a {
 ----------------- */
 .enjoy-list .info {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
 }
-.enjoy-list .title {
+.text-container > .title {
     padding-left: 21px;
+    margin: 64px 0 24px;
     border-left: 5px solid #ff900e;
 }
 
@@ -162,7 +168,135 @@ nav a {
 }
 
 .enjoy-list img {
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
+    border-radius: 8px;}
 
+.enjoy-list .sub-title {
+    color: #131313;
+    margin-bottom: 10px;
+}
+.enjoy-list .button {
+    position: absolute;
+    top: 3150px;
+    left: 730px;
+    text-align: center;
+    padding: 45px;
+}
+
+/* Some Facts Style 
+---------------- */
+.some-facts .desc {
+    max-width: 542px;
+    margin: 24px 0 100px;
+}
+
+.some-facts .facts {
+    gap: 94px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.some-facts .fact {
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #ff900e;
+    border-radius: 8px;
+    padding: 45px 35px;
+    height: 242px;
+    width: 242px;
+
+}
+
+
+.facts img {
+    height: 45px;
+    width: 45px;
+}
+
+.facts .title {
+    color: #424242;
+    margin: 8px 0 5px;
+    font-weight: 600;
+}
+
+.facts .sub-title {
+    font-weight: 600;
+    color: #727272;
+}
+
+/* Sponsors Style 
+-------------- */
+.sponsor {
+    flex-direction: column;
+}
+
+.sponsor .desc {
+    max-width: 542px;
+    text-align: center;
+    margin: 24px 0 50px;
+}
+
+.brands {
+    gap: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand {
+    height: 50px;
+    width: auto;
+}
+
+/* Footer Style 
+--------------- */
+
+footer.container {
+    background-color: rgba(255, 144, 14, 0.1);
+    max-width: 1300px;
+}
+
+footer .sub-title {
+    text-align: center;
+    font-weight: 400;
+    color: #424242;
+    padding: 40px;
+}
+
+
+/* Mobile Screen 
+-------------- */
+@media screen and (max-width: 576px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .img-container.grid {
+        grid-template-columns:  repeat(1, 1fr);
+    }
+
+    .quick-list .img-container img {
+        width: 295px;
+        height: 295px;
+        margin: 0 auto;
+    }
+    .enjoy-list .button {
+        margin-top: 20px;
+        position:static;
+    }
+}
+
+/* Tablet Screen 
+------------- */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .quick-list,
+    .enjoy-list .info {
+        flex-direction: column;
+    }
+
+    .enjoy-list .button {
+        margin-top: 20px;
+        position:static;
+    }
 }
