@@ -250,6 +250,8 @@ nav a {
 -------------- */
 .sponsor {
     flex-direction: column;
+    text-align: center;
+
 }
 
 .sponsor .desc {
@@ -270,8 +272,8 @@ nav a {
     filter: grayscale(100%);  
 }
 
-/* Workshop Style 
---------------- */
+/* Workshop Newsletter Style 
+------------------------- */
 
 .workshop {
     gap: 100px;
@@ -321,16 +323,13 @@ nav a {
 /* Footer Style 
 --------------- */
 
-footer.container {
-    background-color: rgba(255, 144, 14, 0.1);
-    max-width: 1300px;
-}
-
 footer .sub-title {
     text-align: center;
     font-weight: 400;
     color: #424242;
     padding: 40px;
+    background-color: rgba(255, 144, 14, 0.1);
+
 }
 
 
@@ -353,6 +352,9 @@ footer .sub-title {
     .enjoy-list .button {
         margin-top: 20px;
         position:static;
+    }
+    .showcase .title, .workshop .title {
+        font-size: 45px;
     }
 }
 
